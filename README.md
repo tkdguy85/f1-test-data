@@ -1,16 +1,14 @@
-# React + Vite
+# F1 Test Data Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is going to be a test bed for building some ChartJS visualization tools for the current F1 Testings.
+After this test bed is completed, I'll probably move into building up a more updatable interactive app that tracks what's going in the full season.
+Potentially co-building this with some AI inputs, though, I'll be monitoring the data closely since I'm sure Claude or ChatGPT will want to add Ayrton Senna, Alain Prost or Michael Schumacher to the current rosters.
 
-Currently, two official plugins are available:
+## Supporting sites
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Listing below a couple of useful resources for current/future me to check in on
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Cool Chart JS refresher with [PedroTech](https://www.youtube.com/watch?v=ZpfseYy5Hxg)
+- Potential open-source API data for the current season courtesy of [OpenF1](https://openf1.org/docs/#introduction)
+- Interesting project built out by [bordanattila](https://github.com/bordanattila) for a Python based app via the [OpenF1 Tutorial](https://github.com/bordanattila/OpenF1_tutorial) repo.
+- [ChartJS docs](https://www.chartjs.org/) for when you forget how to just Google it.
