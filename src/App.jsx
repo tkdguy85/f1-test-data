@@ -1,7 +1,7 @@
 // import { useState } from 'react'
 import { LineGraph } from './components/Line.jsx'
 import F1Dashboard from './components/F1Dashboard.jsx'
-import './App.css'
+import './styles/App.css'
 
 function App() {
   return (
