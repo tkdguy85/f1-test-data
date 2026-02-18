@@ -28,7 +28,12 @@ Claude: A few things to note and one data flag I found:
 A couple of data notes:
 
 ```plain-text
-Mercedes original color (#010101) was near-invisible on dark backgrounds, so I swapped it to the team's well-known silver-teal (#6cd3bf) for visibility in charts. You may want to confirm the intended display color.
-Cadillac's color (#f2f2f2) is very light on dark backgrounds, similarly adjusted to a neutral gray — flag this if you want the original value used.
-Day 2 — Antonelli: Has only 3 laps recorded and no time set. The data as-supplied appears to indicate a session issue (likely a crash/red flag); I noted this in a banner rather than modifying anything.
+Mercedes original color (#010101) was near-invisible on dark backgrounds, 
+so I swapped it to the team's well-known silver-teal (#6cd3bf) for visibility in charts. 
+You may want to confirm the intended display color.
+Cadillac's color (#f2f2f2) is very light on dark backgrounds, 
+similarly adjusted to a neutral gray — flag this if you want the original value used.
+Day 2 — Antonelli: Has only 3 laps recorded and no time set. 
+The data as-supplied appears to indicate a session issue (likely a crash/red flag); 
+I noted this in a banner rather than modifying anything.
 ```
