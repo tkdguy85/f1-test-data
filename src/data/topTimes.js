@@ -1,0 +1,467 @@
+export const day1TopTimes = [
+  { 
+    position: 1, 
+    driver: "Norris", 
+    team: "McLaren", 
+    laps: 58, 
+    time: 94.669,
+    gap: null,
+    tires: "C2" 
+  },
+  { 
+    position: 2, 
+    driver: "Verstappen", 
+    team: "Red Bull", 
+    laps: 136, 
+    time: 94.798,
+    gap: 0.129,
+    tires: "C3" 
+  },
+  { 
+    position: 3, 
+    driver: "Leclerc", 
+    team: "Ferrari", 
+    laps: 80, 
+    time: 95.190,
+    gap: 0.521,
+    tires: "C3" 
+  },
+  { 
+    position: 4, 
+    driver: "Ocon", 
+    team: "Haas", 
+    laps: 115, 
+    time: 95.578,
+    gap: 0.909,
+    tires: "C3" 
+  },
+  { 
+    position: 5, 
+    driver: "Piastri", 
+    team: "McLaren", 
+    laps: 54, 
+    time: 95.602,
+    gap: 0.933,
+    tires: "C3" 
+  },
+  { 
+    position: 6, 
+    driver: "Russell", 
+    team: "Mercedes", 
+    laps: 56, 
+    time: 96.108,
+    gap: 1.439,
+    tires: "C3" 
+  },
+  { 
+    position: 7, 
+    driver: "Hamilton", 
+    team: "Ferrari", 
+    laps: 52, 
+    time: 96.433,
+    gap: 1.764,
+    tires: "C3" 
+  },
+  { 
+    position: 8, 
+    driver: "Gasly", 
+    team: "Alpine", 
+    laps: 49, 
+    time: 96.765,
+    gap: 2.096,
+    tires: "C3" 
+  },
+  { 
+    position: 9, 
+    driver: "Hulkenberg", 
+    team: "Audi", 
+    laps: 73, 
+    time: 96.861,
+    gap: 2.192,
+    tires: "C3" 
+  },
+  { 
+    position: 10, 
+    driver: "Albon", 
+    team: "Williams", 
+    laps: 68, 
+    time: 97.437,
+    gap: 2.768,
+    tires: "C3" 
+  },
+  { 
+    position: 11, 
+    driver: "Antonelli", 
+    team: "Mercedes", 
+    laps: 30, 
+    time: 97.629,
+    gap: 2.960,
+    tires: "C1" 
+  },
+  { 
+    position: 12, 
+    driver: "Lindblad", 
+    team: "Racing Bulls", 
+    laps: 75, 
+    time: 97.945,
+    gap: 3.276,
+    tires: "C3" 
+  },
+  { 
+    position: 13, 
+    driver: "Sainz", 
+    team: "Williams", 
+    laps: 77, 
+    time: 98.221,
+    gap: 3.552,
+    tires: "C3" 
+  },
+  { 
+    position: 14, 
+    driver: "Perez", 
+    team: "Cadillac", 
+    laps: 58, 
+    time: 98.828,
+    gap: 4.159,
+    tires: "C2" 
+  },
+  { 
+    position: 15, 
+    driver: "Bortoleto", 
+    team: "Audi", 
+    laps: 49, 
+    time: 98.871,
+    gap: 4.202,
+    tires: "C3" 
+  },
+  { 
+    position: 16, 
+    driver: "Bottas", 
+    team: "Cadillac", 
+    laps: 49, 
+    time: 99.150,
+    gap: 4.481,
+    tires: "C1" 
+  },
+  { 
+    position: 17, 
+    driver: "Stroll", 
+    team: "Aston Martin", 
+    laps: 36, 
+    time: 99.883,
+    gap: 5.214,
+    tires: "C2" 
+  },
+  { 
+    position: 18, 
+    driver: "Colapinto", 
+    team: "Alpine", 
+    laps: 28, 
+    time: 100.330,
+    gap: 5.661,
+    tires: "C2" 
+  }
+]
+
+export const day2TopTimes = [
+  { 
+    position: 1, 
+    driver: "Leclerc", 
+    team: "Ferrari", 
+    laps: 139, 
+    time: 94.273,
+    gap: null,
+    tires: "C3" 
+  },
+  { 
+    position: 2, 
+    driver: "Norris", 
+    team: "McLaren", 
+    laps: 149, 
+    time: 94.784,
+    gap: 0.511,
+    tires: "C2" 
+  },
+  { 
+    position: 3, 
+    driver: "Bearman", 
+    team: "Haas", 
+    laps: 130, 
+    time: 95.394,
+    gap: 1.121,
+    tires: "C3" 
+  },
+  { 
+    position: 4, 
+    driver: "Russell", 
+    team: "Mercedes", 
+    laps: 54, 
+    time: 95.466,
+    gap: 1.193,
+    tires: "C3" 
+  },
+  { 
+    position: 5, 
+    driver: "Hadjar", 
+    team: "Red Bull", 
+    laps: 87, 
+    time: 95.561,
+    gap: 1.288,
+    tires: "C3" 
+  },
+  { 
+    position: 6, 
+    driver: "Bortoleto", 
+    team: "Audi", 
+    laps: 67, 
+    time: 96.670,
+    gap: 2.397,
+    tires: "C3" 
+  },
+  { 
+    position: 7, 
+    driver: "Gasly", 
+    team: "Alpine", 
+    laps: 97, 
+    time: 96.723,
+    gap: 2.450,
+    tires: "C3" 
+  },
+  { 
+    position: 8, 
+    driver: "Bottas", 
+    team: "Cadillac", 
+    laps: 67, 
+    time: 96.824,
+    gap: 2.551,
+    tires: "C3" 
+  },
+  { 
+    position: 9, 
+    driver: "Albon", 
+    team: "Williams", 
+    laps: 62, 
+    time: 97.229,
+    gap: 2.956,
+    tires: "C3" 
+  },
+  { 
+    position: 10,
+    driver: "Hulkenberg", 
+    team: "Audi", 
+    laps: 47, 
+    time: 97.266,
+    gap: 2.993,
+    tires: "C3" 
+  },
+  { 
+    position: 11,
+    driver: "Lindblad", 
+    team: "Racing Bulls", 
+    laps: 83, 
+    time: 97.470,
+    gap: 3.197,
+    tires: "C3" 
+  },
+  { 
+    position: 12,
+    driver: "Sainz", 
+    team: "Williams", 
+    laps: 69, 
+    time: 97.592,
+    gap: 3.319,
+    tires: "C3" 
+  },
+  { 
+    position: 13,
+    driver: "Lawson", 
+    team: "Racing Bulls", 
+    laps: 50, 
+    time: 98.017,
+    gap: 3.744,
+    tires: "C3" 
+  },
+  { 
+    position: 14,
+    driver: "Alonso", 
+    team: "Aston Martin", 
+    laps: 98, 
+    time: 98.248,
+    gap: 3.975,
+    tires: "C3" 
+  },
+  { 
+    position: 15,
+    driver: "Perez", 
+    team: "Cadillac", 
+    laps: 42, 
+    time: 98.653,
+    gap: 4.380,
+    tires: "C3" 
+  },
+  { 
+    position: 16,
+    driver: "Antonelli", 
+    team: "Mercedes", 
+    laps: 3, 
+    time: null,
+    gap: null,
+    tires: "C3" 
+  }
+]
+
+export const day3TopTimes = [
+  { 
+    position: 1, 
+    driver: "Antonelli", 
+    team: "Mercedes", 
+    laps: 61, 
+    time: 93.669,
+    gap: null,
+    tires: "C3"
+  },
+  { 
+    position: 2, 
+    driver: "Russell", 
+    team: "Mercedes", 
+    laps: 78, 
+    time: 93.918,
+    gap: 0.249,
+    tires: "C3"
+  },
+  { 
+    position: 3, 
+    driver: "Hamilton", 
+    team: "Ferrari", 
+    laps: 150, 
+    time: 94.209,
+    gap: 0.540,
+    tires: "C3"
+  },
+  { 
+    position: 4, 
+    driver: "Piastri", 
+    team: "McLaren", 
+    laps: 161, 
+    time: 94.549,
+    gap: 0.880,
+    tires: "C3"
+  },
+  { 
+    position: 5, 
+    driver: "Verstappen", 
+    team: "Red Bull", 
+    laps: 61, 
+    time: 95.341,
+    gap: 1.672,
+    tires: "C3"
+  },
+  { 
+    position: 6, 
+    driver: "Hadjar", 
+    team: "Red Bull", 
+    laps: 59, 
+    time: 95.610,
+    gap: 1.941,
+    tires: "C3"
+  },
+  { 
+    position: 7, 
+    driver: "Ocon", 
+    team: "Haas", 
+    laps: 75, 
+    time: 95.753,
+    gap: 2.084,
+    tires: "C3"
+  },
+  { 
+    position: 8, 
+    driver: "Colapinto", 
+    team: "Alpine", 
+    laps: 144, 
+    time: 95.806,
+    gap: 2.137,
+    tires: "C3"
+  },
+  { 
+    position: 9, 
+    driver: "Bearman", 
+    team: "Haas", 
+    laps: 70, 
+    time: 95.972,
+    gap: 2.303,
+    tires: "C3"
+  },
+  { 
+    position: 10, 
+    driver: "Hulkenberg", 
+    team: "Audi", 
+    laps: 58, 
+    time: 96.291,
+    gap: 2.622,
+    tires: "C3"
+  },
+  { 
+    position: 11, 
+    driver: "Albon", 
+    team: "Williams", 
+    laps: 78, 
+    time: 96.793,
+    gap: 2.996,
+    tires: "C3"
+  },
+  { 
+    position: 12, 
+    driver: "Lawson", 
+    team: "Racing Bulls", 
+    laps: 119, 
+    time: 96.808,
+    gap: 3.139,
+    tires: "C3"
+  },
+  { 
+    position: 13, 
+    driver: "Sainz", 
+    team: "Williams", 
+    laps: 68, 
+    time: 97.186,
+    gap: 3.517,
+    tires: "C3"
+  },
+  { 
+    position: 14, 
+    driver: "Perez", 
+    team: "Cadillac", 
+    laps: 67, 
+    time: 97.365,
+    gap: 3.696,
+    tires: "C3"
+  },
+  { 
+    position: 15, 
+    driver: "Bortoleto", 
+    team: "Audi", 
+    laps: 60, 
+    time: 97.536,
+    gap: 3.867,
+    tires: "C3"
+  },
+  { 
+    position: 16, 
+    driver: "Stroll", 
+    team: "Aston Martin", 
+    laps: 72, 
+    time: 98.165,
+    gap: 4.496,
+    tires: "C3"
+  },
+  { 
+    position: 17, 
+    driver: "Bottas", 
+    team: "Cadillac", 
+    laps: 37, 
+    time: 98.772,
+    gap: 5.103,
+    tires: "C3"
+  }
+]

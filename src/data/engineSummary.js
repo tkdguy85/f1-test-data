@@ -1,0 +1,113 @@
+export const day1EngineSummary = [
+  {
+    engine: "Mercedes",
+    teams: ["Williams", "McLaren", "Mercedes", "Alpine"],
+    totalLaps: 420,
+    kilometres: 2273,
+    avgKmPerTeam: 569
+  },
+  {
+    engine: "Ferrari",
+    teams: ["Ferrari", "Haas", "Cadillac"],
+    totalLaps: 354,
+    kilometres: 1916,
+    avgKmPerTeam: 639
+  },
+  {
+    engine: "Red Bull Ford",
+    teams: ["Red Bull", "Racing Bulls"],
+    totalLaps: 211,
+    kilometres: 1142,
+    avgKmPerTeam: 571
+  },
+  {
+    engine: "Audi",
+    teams: ["Audi"],
+    totalLaps: 122,
+    kilometres: 660,
+    avgKmPerTeam: 660
+  },
+  {
+    engine: "Honda",
+    teams: ["Aston Martin"],
+    totalLaps: 36,
+    kilometres: 195,
+    avgKmPerTeam: 195
+  }
+]
+
+export const day2EngineSummary = [
+  {
+    engine: "Mercedes",
+    teams: ["Williams", "McLaren", "Mercedes", "Alpine"],
+    laps: 434,
+    kilometres: 2349,
+    avgKmPerTeam: 587
+  },
+  {
+    engine: "Ferrari",
+    teams: ["Ferrari", "Haas", "Cadillac"],
+    laps: 378,
+    kilometres: 2046,
+    avgKmPerTeam: 682
+  },
+  {
+    engine: "Red Bull Ford",
+    teams: ["Red Bull", "Racing Bulls"],
+    laps: 220,
+    kilometres: 1191,
+    avgKmPerTeam: 595
+  },
+  {
+    engine: "Audi",
+    teams: ["Audi"],
+    laps: 114,
+    kilometres: 617,
+    avgKmPerTeam: 617
+  },
+  {
+    engine: "Honda",
+    teams: ["Aston Martin"],
+    laps: 98,
+    kilometres: 530,
+    avgKmPerTeam: 530
+  }
+]
+
+export const day3EngineSummary = [
+  {
+    engine: "Mercedes",
+    teams: ["Williams", "McLaren", "Mercedes", "Alpine"],
+    laps: 590,
+    kilometres: 3193,
+    avgKmPerTeam: 798
+  },
+  {
+    engine: "Ferrari",
+    teams: ["Ferrari", "Haas", "Cadillac"],
+    laps: 399,
+    kilometres: 2159,
+    avgKmPerTeam: 720
+  },
+  {
+    engine: "Red Bull Ford",
+    teams: ["Red Bull", "Racing Bulls"],
+    laps: 239,
+    kilometres: 1294,
+    avgKmPerTeam: 647
+  },
+  {
+    engine: "Audi",
+    teams: ["Audi"],
+    laps: 118,
+    kilometres: 639,
+    avgKmPerTeam: 639
+  },
+  {
+    engine: "Honda",
+    teams: ["Aston Martin"],
+    laps: 72,
+    kilometres: 390,
+    avgKmPerTeam: 390
+  }
+]
