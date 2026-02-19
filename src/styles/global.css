@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@300;400;500&family=Barlow+Condensed:wght@300;400;600;700&display=swap');
+
+*, 
+*::before, 
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #0a0a0f;
+  --surface: #111118;
+  --surface2: #18181f;
+  --border: #252530;
+  --text: #e8e8f0;
+  --muted: #6b6b80;
+  --accent: #e10600;
+  --accent2: #ffffff;
+  --font-display: 'Bebas Neue', sans-serif;
+  --font-body: 'Barlow Condensed', sans-serif;
+  --font-mono: 'DM Mono', monospace;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  min-height: 100vh;
+}
+
+/* ── Layout ──────────────────────────────────────────── */
+
+.app {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 24px 80px;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr; 
+  }
+}
+
+
+/* ── Header ──────────────────────────────────────────── */
+
+.header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 48px 0 32px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 48px;
+  gap: 24px;
+}
+
+.header-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.25em;
+  color: var(--accent);
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.header-title {
+  font-family: var(--font-display);
+  font-size: clamp(48px, 6vw, 88px);
+  line-height: 0.9;
+  color: var(--accent2);
+  letter-spacing: 0.02em;
+
+  span { 
+    color: var(--accent); 
+  }
+}
+
+
+.header-meta {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--muted);
+  text-align: right;
+  line-height: 1.8;
+}
+
+.header-meta-accent { 
+  color: var(--accent); margin-top: 4px; 
+}
+
+/* ── Nav ─────────────────────────────────────────────── */
+
+.nav {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 48px;
+  background: var(--surface);
+  padding: 4px;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+.nav-tab {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background: none;
+  border: none;
+  color: var(--muted);
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 0.2s;
+  white-space: nowrap;
+  flex: 1;
+  text-align: center;
+
+  &:hover { 
+    color: var(--text); 
+    background: var(--surface2); 
+  }
+
+  &.active { 
+    background: var(--accent); 
+    color: #fff; 
+  }
+}
+
+
+/* ── Section headings ────────────────────────────────── */
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: 36px;
+  letter-spacing: 0.05em;
+  color: var(--accent2);
+  margin-bottom: 8px;
+}
+
+.section-sub {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--muted);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+/* ── Card ────────────────────────────────────────────── */
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 28px;
+  margin-bottom: 24px;
+}
+
+.card-title {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  &::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+}
+
+
+/* ── Day / metric selector buttons ───────────────────── */
+
+.day-selector {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 20px;
+}
+
+.day-btn {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  color: var(--muted);
+  padding: 6px 14px;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 0.15s;
+  
+  &:hover { 
+    color: var(--text); 
+    border-color: var(--muted); 
+  }
+  
+  &.active {
+    background: var(--surface2);
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+}
+
+
+
+/* ── Notice banner ───────────────────────────────────── */
+
+.note-banner {
+  background: var(--surface2);
+  border-left: 3px solid var(--accent);
+  padding: 10px 16px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--muted);
+  margin-bottom: 24px;
+  border-radius: 0 4px 4px 0;
+}
+
+/* ── Timing table ────────────────────────────────────── */
+
+.timing-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-mono);
+  font-size: 12px;
+
+  th {
+    text-align: left;
+    padding: 8px 12px;
+    color: var(--muted);
+    letter-spacing: 0.1em;
+    font-size: 10px;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--border);
+  }
+
+  td {
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--border);
+    color: var(--text);
+  }
+
+  tr:hover td { 
+    background: var(--surface2); 
+  }
+}
+
+.timing-table 
+.pos { 
+  color: var(--muted); 
+  width: 30px; 
+}
+
+.timing-table 
+.driver-name-cell {
+  font-weight: 500;
+  font-family: var(--font-body);
+  font-size: 14px;
+}
+
+.timing-table 
+.time-val {
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
+.timing-table 
+.gap-val { 
+  color: var(--muted); 
+}
+
+/* ── Tyre badges ─────────────────────────────────────── */
+
+.team-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.tire-badge {
+  display: inline-block;
+  padding: 2px 6px;
+  border-radius: 2px;
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+}
+
+.tire-C1 { 
+  background: #fff;    
+  color: #000; 
+}
+
+.tire-C2 { 
+  background: #f0e500; 
+  color: #000; 
+}
+
+.tire-C3 { 
+  background: #ff3c3c; 
+  color: #fff; 
+}
+
+.tire-C4 { 
+  background: #c0c0c0; 
+  color: #000; 
+}
+
+.tire-C5 { 
+  background: #ff9900; 
+  color: #000; 
+}
