@@ -29,7 +29,7 @@ body {
   min-height: 100vh;
 }
 
-/* ── Layout ──────────────────────────────────────────── */
+/** Layout **/
 
 .app {
   max-width: 1440px;
@@ -94,7 +94,7 @@ body {
   color: var(--accent); margin-top: 4px; 
 }
 
-/* ── Nav ─────────────────────────────────────────────── */
+/** Nav **/
 
 .nav {
   display: flex;
@@ -135,7 +135,7 @@ body {
 }
 
 
-/* ── Section headings ────────────────────────────────── */
+/** Section headings **/
 
 .section-title {
   font-family: var(--font-display);
@@ -154,7 +154,7 @@ body {
   margin-bottom: 32px;
 }
 
-/* ── Card ────────────────────────────────────────────── */
+/** Card Layout **/
 
 .card {
   background: var(--surface);
@@ -185,7 +185,7 @@ body {
 }
 
 
-/* ── Day / metric selector buttons ───────────────────── */
+/** Day / metric selector buttons **/
 
 .day-selector {
   display: flex;
@@ -219,7 +219,7 @@ body {
 
 
 
-/* ── Notice banner ───────────────────────────────────── */
+/** Notice banner **/
 
 .note-banner {
   background: var(--surface2);
@@ -232,7 +232,7 @@ body {
   border-radius: 0 4px 4px 0;
 }
 
-/* ── Timing table ────────────────────────────────────── */
+/** Timing table **/
 
 .timing-table {
   width: 100%;
@@ -285,7 +285,7 @@ body {
   color: var(--muted); 
 }
 
-/* ── Tyre badges ─────────────────────────────────────── */
+/** Tyre type icons **/
 
 .team-dot {
   display: inline-block;
