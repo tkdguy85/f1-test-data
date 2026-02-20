@@ -1,5 +1,5 @@
 import { Line } from 'react-chartjs-2'
-import teamData from '../data/SAMPLE_DATA'
+import teamData from '../data/raw_data/SAMPLE_DATA'
 import { 
   Chart as ChartJS, 
   CategoryScale, 

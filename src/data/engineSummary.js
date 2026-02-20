@@ -1,3 +1,12 @@
+// Engine Color keys
+export const engineColors = {
+  "Mercedes": "#75f1d3",
+  "Ferrari": "#b52e37",
+  "Red Bull Ford": "#4570c0",
+  "Audi": "#eb4526",
+  "Honda": "#4b9774",
+}
+
 export const day1EngineSummary = [
   {
     engine: "Mercedes",
