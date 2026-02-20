@@ -1,4 +1,4 @@
-import teams from "../data/teams"
+import teams from "../data/teamData"
 
 // Map short team names (used in timing/run data) to full team names (used in teams.js)
 export const teamNameMap = {

@@ -178,12 +178,14 @@ export const teamData = [
     drivers: [
       { 
         name: "Max Verstappen", 
-        number: 3 }
-        ,
+        number: 3 
+      },
       { 
         name: "Isack Hadjar", 
-        number: 6 }
-        
+        number: 6 
+      }  
     ]
   }
 ]
+
+export default teamData

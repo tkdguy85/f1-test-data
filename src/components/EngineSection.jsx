@@ -5,7 +5,7 @@ import {
   day2EngineSummary,
   day3EngineSummary,
   engineColors,
-} from "../data/engines"
+} from "../data/engineSummary"
 import { baseChartOptions, radarChartOptions } from "../utils/chartConfig"
 
 const DAY_SUMMARIES = [day1EngineSummary, day2EngineSummary, day3EngineSummary]

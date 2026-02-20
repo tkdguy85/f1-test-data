@@ -1,5 +1,5 @@
 import { useState } from "react"
-import teams from "../data/teams"
+import teams from "../data/teamData"
 import "../styles/teams.css"
 
 function TeamCard({ team, isSelected, onSelect }) {

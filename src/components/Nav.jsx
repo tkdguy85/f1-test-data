@@ -1,5 +1,5 @@
 const TABS = [
-  { id: "laps",   label: "Lap Times" },
+  { id: "times",   label: "Lap Times" },
   { id: "engines", label: "Engine Data" },
   { id: "runs",    label: "Team Runs" },
   { id: "teams",   label: "Team Directory" },

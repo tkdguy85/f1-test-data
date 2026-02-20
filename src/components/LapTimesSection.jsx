@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { Bar, Line } from "react-chartjs-2"
-import { day1TopTimes, day2TopTimes, day3TopTimes } from "../data/timing"
+import { day1TopTimes, day2TopTimes, day3TopTimes } from "../data/topLapTimes"
 import { getTeamColor, formatLapTime } from "../utils/helpers"
 import { baseChartOptions } from "../utils/chartConfig"
 import TimingTable from "./TimingTable"
@@ -49,10 +49,10 @@ function buildGapData(sorted) {
 
 function buildCrossDayData() {
   const allDrivers = {}
-
-  [day1TopTimes, day2TopTimes, day3TopTimes].forEach((dayArr, idx) => {
+  const dayArrays = [day1TopTimes, day2TopTimes, day3TopTimes]
+  dayArrays.forEach((dayArr, idx) => {
     dayArr.forEach((entry) => {
-      if (!entry.time) return
+      if (!entry.time) return 
       if (!allDrivers[entry.driver]) {
         allDrivers[entry.driver] = { team: entry.team, times: [null, null, null] }
       }
