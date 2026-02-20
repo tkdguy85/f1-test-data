@@ -21,12 +21,12 @@ export default function App() {
     <div className="app">
       <Header />
       <Nav active={tab} onChange={setTab} />
-      <p className="note-banner">{NOTE}</p>
+      {tab === "times" && <p className="note-banner">{NOTE}</p>}
 
-      {tab === "times"   && <LapTimesSection />}
+      {tab === "times" && <LapTimesSection />}
       {tab === "engines" && <EngineSection />}
-      {tab === "runs"    && <TeamRunSection />}
-      {tab === "teams"   && <TeamsSection />}
+      {tab === "runs" && <TeamRunSection />}
+      {tab === "teams" && <TeamsSection />}
     </div>
   );
 }

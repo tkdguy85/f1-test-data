@@ -70,7 +70,7 @@ function buildCrossDayData() {
     .slice(0, 12)
 
   return {
-    labels: ["Day 1", "Day 2", "Day 3"],
+    labels: ["DAY 1", "DAY 2", "DAY 3"],
     datasets: multiDay.map(([driver, { team, times }]) => ({
       label: driver,
       data: times,
@@ -177,7 +177,7 @@ export default function LapTimesSection() {
             className={`day-btn ${day === d ? "active" : ""}`}
             onClick={() => setDay(d)}
           >
-            {d === "day1" ? "Day 1" : d === "day2" ? "Day 2" : "Day 3"}
+            {d === "day1" ? "DAY 1" : d === "day2" ? "DAY 2" : "DAY 3"}
           </button>
         ))}
       </div>
