@@ -67,7 +67,7 @@ function buildCrossDayData() {
       const bMin = Math.min(...b[1].times.filter(Boolean))
       return aMin - bMin
     })
-    .slice(0, 12)
+    .slice(0, 10)
 
   return {
     labels: ["DAY 1", "DAY 2", "DAY 3"],
@@ -113,7 +113,7 @@ export default function LapTimesSection() {
         min: Math.floor(minTime - 1),
         ticks: {
           ...baseChartOptions.scales.y.ticks,
-          callback: (v) => `${v}s`,
+          callback: (v) => formatLapTime(v),
         },
       },
     },
@@ -157,7 +157,7 @@ export default function LapTimesSection() {
         ...baseChartOptions.scales.y,
         ticks: {
           ...baseChartOptions.scales.y.ticks,
-          callback: (v) => `${v}s`,
+          callback: (v) => formatLapTime(v),
         },
       },
     },
@@ -202,7 +202,7 @@ export default function LapTimesSection() {
       </div>
 
       <div className="card">
-        <div className="card-title">Driver Progression Across 3 Days (Top 12)</div>
+        <div className="card-title">Driver Progression Across 3 Days (Top 10)</div>
         <div style={{ height: 340 }}>
           <Line data={buildCrossDayData()} options={crossDayOptions} />
         </div>

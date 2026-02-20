@@ -15,9 +15,8 @@ export const teamNameMap = {
   "Red Bull":      "Red Bull",
 }
 
-/**
- * Returns the hex color string for a given short team name.
- */
+
+// Returns the hex color string for a given short team name.
 export function getTeamColor(teamName) {
   const fullName = teamNameMap[teamName] || teamName
   const team = teams.find(
@@ -26,9 +25,7 @@ export function getTeamColor(teamName) {
   return team ? team.color : "#888888"
 }
 
-/**
- * Formats a lap time in seconds to M:SS.mmm string.
- */
+// Formats a lap time in seconds to M:SS.mmm string.
 export function formatLapTime(seconds) {
   if (seconds == null) return "—"
   const mins = Math.floor(seconds / 60)
@@ -36,9 +33,7 @@ export function formatLapTime(seconds) {
   return `${mins}:${secs}`
 }
 
-/**
- * Returns the team code for a given short team name.
- */
+// Returns the team code for a given short team name.
 export function getTeamCode(teamName) {
   const fullName = teamNameMap[teamName] || teamName
   const team = teams.find(
