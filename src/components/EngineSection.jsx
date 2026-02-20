@@ -1,12 +1,12 @@
-import { useState } from "react";
-import { Bar, Line, Radar } from "react-chartjs-2";
+import { useState } from "react"
+import { Bar, Line, Radar } from "react-chartjs-2"
 import {
   day1EngineSummary,
   day2EngineSummary,
   day3EngineSummary,
   engineColors,
-} from "../data/engines";
-import { baseChartOptions, radarChartOptions } from "../utils/chartConfig";
+} from "../data/engines"
+import { baseChartOptions, radarChartOptions } from "../utils/chartConfig"
 
 const DAY_SUMMARIES = [day1EngineSummary, day2EngineSummary, day3EngineSummary]
 const DAY_LABELS = ["Day 1", "Day 2", "Day 3"]
@@ -229,7 +229,7 @@ export default function EngineSection() {
                   <td>{getLaps(d3) || "—"}</td>
                   <td>{d3?.kilometres ?? "—"}</td>
                 </tr>
-              );
+              )
             })}
           </tbody>
         </table>

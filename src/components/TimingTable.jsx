@@ -1,4 +1,4 @@
-import { getTeamColor, formatLapTime } from "../utils/helpers";
+import { getTeamColor, formatLapTime } from "../utils/helpers"
 
 export default function TimingTable({ times }) {
   return (
@@ -42,5 +42,5 @@ export default function TimingTable({ times }) {
         ))}
       </tbody>
     </table>
-  );
+  )
 }

@@ -1,15 +1,15 @@
-import { useState } from "react";
-import { Bar, Line } from "react-chartjs-2";
-import { day1TopTimes, day2TopTimes, day3TopTimes } from "../data/timing";
-import { getTeamColor, formatLapTime } from "../utils/helpers";
-import { baseChartOptions } from "../utils/chartConfig";
-import TimingTable from "./TimingTable";
+import { useState } from "react"
+import { Bar, Line } from "react-chartjs-2"
+import { day1TopTimes, day2TopTimes, day3TopTimes } from "../data/timing"
+import { getTeamColor, formatLapTime } from "../utils/helpers"
+import { baseChartOptions } from "../utils/chartConfig"
+import TimingTable from "./TimingTable"
 
 const DAY_MAP = {
   day1: day1TopTimes,
   day2: day2TopTimes,
   day3: day3TopTimes,
-};
+}
 
 function buildBarData(sorted) {
   return {
@@ -24,7 +24,7 @@ function buildBarData(sorted) {
         borderRadius: 2,
       },
     ],
-  };
+  }
 }
 
 function buildGapData(sorted) {
@@ -44,30 +44,30 @@ function buildGapData(sorted) {
         pointBorderWidth: 2,
       },
     ],
-  };
+  }
 }
 
 function buildCrossDayData() {
-  const allDrivers = {};
+  const allDrivers = {}
 
   [day1TopTimes, day2TopTimes, day3TopTimes].forEach((dayArr, idx) => {
     dayArr.forEach((entry) => {
-      if (!entry.time) return;
+      if (!entry.time) return
       if (!allDrivers[entry.driver]) {
-        allDrivers[entry.driver] = { team: entry.team, times: [null, null, null] };
+        allDrivers[entry.driver] = { team: entry.team, times: [null, null, null] }
       }
-      allDrivers[entry.driver].times[idx] = entry.time;
-    });
-  });
+      allDrivers[entry.driver].times[idx] = entry.time
+    })
+  })
 
   const multiDay = Object.entries(allDrivers)
     .filter(([, v]) => v.times.filter(Boolean).length >= 2)
     .sort((a, b) => {
-      const aMin = Math.min(...a[1].times.filter(Boolean));
-      const bMin = Math.min(...b[1].times.filter(Boolean));
-      return aMin - bMin;
+      const aMin = Math.min(...a[1].times.filter(Boolean))
+      const bMin = Math.min(...b[1].times.filter(Boolean))
+      return aMin - bMin
     })
-    .slice(0, 12);
+    .slice(0, 12)
 
   return {
     labels: ["Day 1", "Day 2", "Day 3"],
@@ -83,16 +83,16 @@ function buildCrossDayData() {
       pointBorderWidth: 2,
       spanGaps: true,
     })),
-  };
+  }
 }
 
 export default function LapTimesSection() {
-  const [day, setDay] = useState("day1");
+  const [day, setDay] = useState("day1")
 
-  const times = DAY_MAP[day];
-  const validTimes = times.filter((t) => t.time != null);
-  const sorted = [...validTimes].sort((a, b) => a.time - b.time);
-  const minTime = Math.min(...sorted.map((d) => d.time));
+  const times = DAY_MAP[day]
+  const validTimes = times.filter((t) => t.time != null)
+  const sorted = [...validTimes].sort((a, b) => a.time - b.time)
+  const minTime = Math.min(...sorted.map((d) => d.time))
 
   const barOptions = {
     ...baseChartOptions,
@@ -117,7 +117,7 @@ export default function LapTimesSection() {
         },
       },
     },
-  };
+  }
 
   const gapOptions = {
     ...baseChartOptions,
@@ -135,7 +135,7 @@ export default function LapTimesSection() {
         },
       },
     },
-  };
+  }
 
   const crossDayOptions = {
     ...baseChartOptions,
@@ -161,7 +161,7 @@ export default function LapTimesSection() {
         },
       },
     },
-  };
+  }
 
   return (
     <div>
@@ -208,5 +208,5 @@ export default function LapTimesSection() {
         </div>
       </div>
     </div>
-  );
+  )
 }

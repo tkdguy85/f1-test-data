@@ -3,7 +3,7 @@ const TABS = [
   { id: "engines", label: "Engine Data" },
   { id: "runs",    label: "Team Runs" },
   { id: "teams",   label: "Team Directory" },
-];
+]
 
 export default function Nav({ active, onChange }) {
   return (
@@ -18,5 +18,5 @@ export default function Nav({ active, onChange }) {
         </button>
       ))}
     </nav>
-  );
+  )
 }
