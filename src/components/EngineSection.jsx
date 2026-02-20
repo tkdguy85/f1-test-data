@@ -202,11 +202,11 @@ export default function EngineSection() {
               <th>Engine</th>
               <th>Teams</th>
               <th>Day 1 Laps</th>
-              <th>Day 1 km</th>
+              <th>Total Kms</th>
               <th>Day 2 Laps</th>
-              <th>Day 2 km</th>
+              <th>Total Kms</th>
               <th>Day 3 Laps</th>
-              <th>Day 3 km</th>
+              <th>Total Kms</th>
             </tr>
           </thead>
           <tbody>
