@@ -46,9 +46,9 @@ function buildRadarData() {
         const found = day.find((d) => d.engine === eng)
         return found ? found.avgKmPerTeam : 0
       }),
-      borderColor: ["#0027f1", "#f90206", "#f1aa0d"][i],
+      borderColor: ["#0027f1", "#f1aa0d","#f90206"][i],
       backgroundColor: ["#0027f115", "#f9020615", "#f1aa0d15"][i],
-      pointBackgroundColor: ["#0027f1", "#f90206", "#f1aa0d"][i],
+      pointBackgroundColor: ["#0027f1", "#f1aa0d", "#f90206"][i],
       pointRadius: 4,
     })),
   }
@@ -154,7 +154,7 @@ export default function EngineSection() {
     <div>
       <div className="section-title">Engine Manufacturer Data</div>
       <div className="section-sub">
-        Comparing 5 power unit suppliers across testing
+        Comparing all 5 power unit suppliers across testing
       </div>
 
       <div className="day-selector">
