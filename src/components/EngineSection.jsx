@@ -29,8 +29,8 @@ function buildGroupedBarData(metric) {
           return 0
         return metric === "kilometres" ? found.kilometres : getLaps(found)
       }),
-      backgroundColor: ["#ffffff33", "#ffffff55", "#ffffff99"][i],
-      borderColor: ["#555565", "#888898", "#ccccdd"][i],
+      backgroundColor: ["#0027f1", "#f1aa0d","#f90206"][i],
+      borderColor: ["#0027f115", "#f9020615", "#f1aa0d15"][i],
       borderWidth: 1,
       borderRadius: 2,
     })),
