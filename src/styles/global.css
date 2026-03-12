@@ -48,7 +48,7 @@ body {
 }
 
 
-/* ── Header ──────────────────────────────────────────── */
+/** Header **/
 
 .header {
   display: flex;
@@ -92,6 +92,20 @@ body {
 
 .header-meta-accent { 
   color: var(--accent); margin-top: 4px; 
+}
+
+/** Footer **/
+footer {
+  text-align: center;
+  
+  a {
+    color: var(--muted);
+    text-decoration: none;
+    text-transform: uppercase;
+    &:hover {
+      color: var(--text)
+    }
+  }
 }
 
 /** Nav **/

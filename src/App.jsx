@@ -3,6 +3,7 @@ import "./utils/chartConfig" // registers Chart.js globally
 import "./styles/global.css"
 
 import Header from "./components/Header"
+import Footer from "./components/Footer"
 import Nav from "./components/Nav"
 import LapTimesSection from "./components/LapTimesSection"
 import EngineSection from "./components/EngineSection"
@@ -27,7 +28,7 @@ export default function App() {
       {tab === "engines" && <EngineSection />}
       {tab === "runs" && <TeamRunSection />}
       {tab === "teams" && <TeamsSection />}
-
+      <Footer />
     </div>
   );
 }
