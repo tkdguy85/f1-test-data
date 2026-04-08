@@ -27,6 +27,7 @@ body {
   color: var(--text);
   font-family: var(--font-body);
   min-height: 100vh;
+  min-width: 900px;
 }
 
 /** Layout **/
