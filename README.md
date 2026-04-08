@@ -12,6 +12,7 @@ Listing below a couple of useful resources for current/future me to check in on
 - Potential open-source API data for the current season courtesy of [OpenF1](https://openf1.org/docs/#introduction)
 - Interesting project built out by [bordanattila](https://github.com/bordanattila) for a Python based app via the [OpenF1 Tutorial](https://github.com/bordanattila/OpenF1_tutorial) repo.
 - [ChartJS docs](https://www.chartjs.org/) for when you forget how to just Google it.
+- F1 Favicon found here at [flaticon.com]("https://www.flaticon.com/free-icons/f1").
 
 ## Article Data
 
